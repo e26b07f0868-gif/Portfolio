@@ -132,7 +132,6 @@ footer{position:relative;z-index:1;text-align:center;padding:24px;font-size:.9re
       <p>My code lives on GitHub. Say hello, or open a project and leave a star.</p>
       <div class="links">
         <a class="tile" id="gh" data-c="9b6bff" target="_blank" rel="noopener"><b>GitHub</b><span id="ghs"></span></a>
-        <a class="tile" id="ig" data-c="ff6bb5" target="_blank" rel="noopener"><b>Instagram</b><span id="igs"></span></a>
         <button class="tile" id="mail" data-c="3de0ff" type="button"><b>Email</b><span id="mails"></span></button>
       </div>
       <p class="note" id="note" role="status">Hover a tile to wake the 3D core. Click Email to copy my address, or <a href="#" id="mailto">open your mail app</a>.</p>
@@ -147,7 +146,6 @@ footer{position:relative;z-index:1;text-align:center;padding:24px;font-size:.9re
 const CONFIG = {
   name: 'Prince Bhamla',
   github: 'https://github.com/e26b07f0868-gif',
-  instagram: 'prince_97b',
   email: 'bhamlaprince05@gmail.com',
   role: 'Developer who builds interactive, three-dimensional web experiences.',
   stack: ['JavaScript','React','Three.js','Node.js','Git'],
@@ -173,8 +171,6 @@ const $ = s => document.querySelector(s);
 $('#role').textContent = CONFIG.role;
 $('#gh').href = CONFIG.github;
 $('#ghs').textContent = CONFIG.github.replace('https://','');
-$('#ig').href = 'https://instagram.com/' + CONFIG.instagram;
-$('#igs').textContent = '@' + CONFIG.instagram;
 $('#mails').textContent = CONFIG.email;
 $('#mailto').href = 'mailto:' + CONFIG.email;
 $('#yr').textContent = new Date().getFullYear();
